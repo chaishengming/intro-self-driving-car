@@ -122,7 +122,7 @@ vector < vector <float> > blur(vector < vector < float> > grid, float blurring) 
 	float center_prob = 1.0 - blurring;
 	float corner_prob = blurring / 12.0;
 	float adjacent_prob = blurring / 6.0;
-	float range[] = { -1,0,1 };
+	int range[] = { -1,0,1 };
 	int i, j, new_i, new_j;
 	float grid_val, mult;
 	vector< vector<float> > window{ {corner_prob, adjacent_prob, corner_prob},
